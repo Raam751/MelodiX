@@ -90,10 +90,14 @@ export const PlayerProvider = ({ children }) => {
     stateRef.current = state;
   }, [state]);
 
-  // Initialize audio service
+  // Initialize audio service and restore session
   useEffect(() => {
-    audioService.init();
-  }, []);
+    const init = async () => {
+      await audioService.init();
+      await restoreSession();
+    };
+    init();
+  }, [restoreSession]);
 
   // Persist session whenever track changes
   useEffect(() => {

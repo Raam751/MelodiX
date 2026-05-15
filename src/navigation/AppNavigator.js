@@ -75,13 +75,39 @@ const TabNavigator = ({ navigation }) => {
   );
 };
 
+import AsyncStorage from '@react-native-async-storage/async-storage';
+
+const NAVIGATION_STATE_KEY = '@melodix_navigation_state';
+
 /**
  * Main App Navigator
  */
 const AppNavigator = () => {
   const { isAuthenticated, isLoading } = useAuth();
+  const [isReady, setIsReady] = React.useState(false);
+  const [initialState, setInitialState] = React.useState();
 
-  if (isLoading) {
+  React.useEffect(() => {
+    const restoreState = async () => {
+      try {
+        const savedStateString = await AsyncStorage.getItem(NAVIGATION_STATE_KEY);
+        const state = savedStateString ? JSON.parse(savedStateString) : undefined;
+        if (state !== undefined) {
+          setInitialState(state);
+        }
+      } catch (e) {
+        console.error('Failed to restore navigation state:', e);
+      } finally {
+        setIsReady(true);
+      }
+    };
+
+    if (!isLoading) {
+      restoreState();
+    }
+  }, [isLoading]);
+
+  if (isLoading || !isReady) {
     return (
       <GradientBackground>
         <LoadingState message="Loading MelodiX..." />
@@ -90,7 +116,14 @@ const AppNavigator = () => {
   }
 
   return (
-    <NavigationContainer>
+    <NavigationContainer
+      initialState={initialState}
+      onStateChange={(state) => {
+        if (state) {
+          AsyncStorage.setItem(NAVIGATION_STATE_KEY, JSON.stringify(state));
+        }
+      }}
+    >
       <Stack.Navigator screenOptions={{ headerShown: false }}>
         {!isAuthenticated ? (
           <Stack.Screen
