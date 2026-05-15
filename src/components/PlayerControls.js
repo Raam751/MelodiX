@@ -77,13 +77,13 @@ const PlayerControls = memo(() => {
           <Ionicons name="shuffle" size={22} color={Colors.textSecondary} />
         </TouchableOpacity>
 
-        {/* Skip back 10s */}
+        {/* Previous Song */}
         <TouchableOpacity
           style={styles.skipButton}
-          onPress={skipBackward}
+          onPress={playPrevious}
           hitSlop={{ top: 10, bottom: 10, left: 10, right: 10 }}
         >
-          <Ionicons name="play-back" size={28} color={Colors.textPrimary} />
+          <Ionicons name="play-skip-back" size={28} color={Colors.textPrimary} />
         </TouchableOpacity>
 
         {/* Play/Pause */}
@@ -103,13 +103,13 @@ const PlayerControls = memo(() => {
           )}
         </TouchableOpacity>
 
-        {/* Skip forward 10s */}
+        {/* Next Song */}
         <TouchableOpacity
           style={styles.skipButton}
-          onPress={skipForward}
+          onPress={playNext}
           hitSlop={{ top: 10, bottom: 10, left: 10, right: 10 }}
         >
-          <Ionicons name="play-forward" size={28} color={Colors.textPrimary} />
+          <Ionicons name="play-skip-forward" size={28} color={Colors.textPrimary} />
         </TouchableOpacity>
 
         {/* Favorite */}
