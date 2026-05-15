@@ -20,15 +20,19 @@ const apiClient = axios.create({
   },
 });
 
+let isBackendOnline = true;
+
 /**
  * Fetch all tracks
  */
 export const fetchTracks = async () => {
   try {
     const response = await apiClient.get('/api/tracks');
+    isBackendOnline = true;
     return response.data;
   } catch (error) {
     console.log('Backend unavailable, using mock data for tracks');
+    isBackendOnline = false;
     return mockTracks;
   }
 };
@@ -39,9 +43,11 @@ export const fetchTracks = async () => {
 export const fetchTrackById = async (trackId) => {
   try {
     const response = await apiClient.get(`/api/tracks/${trackId}`);
+    isBackendOnline = true;
     return response.data;
   } catch (error) {
     console.log('Backend unavailable, using mock data for track');
+    isBackendOnline = false;
     return mockTracks.find((t) => t.id === trackId) || null;
   }
 };
@@ -52,9 +58,11 @@ export const fetchTrackById = async (trackId) => {
 export const fetchArtists = async () => {
   try {
     const response = await apiClient.get('/api/artists');
+    isBackendOnline = true;
     return response.data;
   } catch (error) {
     console.log('Backend unavailable, using mock data for artists');
+    isBackendOnline = false;
     return mockArtists;
   }
 };
@@ -65,9 +73,11 @@ export const fetchArtists = async () => {
 export const fetchArtistById = async (artistId) => {
   try {
     const response = await apiClient.get(`/api/artists/${artistId}`);
+    isBackendOnline = true;
     return response.data;
   } catch (error) {
     console.log('Backend unavailable, using mock data for artist');
+    isBackendOnline = false;
     const artist = mockArtists.find((a) => a.id === artistId);
     if (artist) {
       return {
@@ -83,6 +93,12 @@ export const fetchArtistById = async (artistId) => {
  * Get the streaming URL for a track
  */
 export const getStreamUrl = (trackId) => {
+  if (!isBackendOnline) {
+    // If backend is unreachable, use royalty-free public MP3s based on track ID
+    const num = parseInt(trackId.replace('track-', '')) || 1;
+    const songNum = ((num - 1) % 16) + 1; // SoundHelix has 1-16
+    return `https://www.soundhelix.com/examples/mp3/SoundHelix-Song-${songNum}.mp3`;
+  }
   return `${baseURL}/api/stream/${trackId}`;
 };
 
