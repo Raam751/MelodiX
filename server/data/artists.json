@@ -1,0 +1,68 @@
+[
+  {
+    "id": "artist-1",
+    "name": "Luna Wave",
+    "genre": "Electronic",
+    "bio": "Luna Wave creates atmospheric electronic soundscapes that blend ambient textures with pulsating rhythms. Known for mesmerizing live performances across major festivals worldwide.",
+    "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&h=200&fit=crop",
+    "coverImage": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=800&h=400&fit=crop",
+    "followers": 245000,
+    "monthlyListeners": 1800000,
+    "cardColor": "#FFE4D6"
+  },
+  {
+    "id": "artist-2",
+    "name": "Marcus Reed",
+    "genre": "Jazz Fusion",
+    "bio": "A virtuoso saxophonist blending classic jazz with modern electronic beats. Marcus has performed at Blue Note, Montreux Jazz Festival, and collaborated with top artists.",
+    "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop",
+    "coverImage": "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=800&h=400&fit=crop",
+    "followers": 189000,
+    "monthlyListeners": 920000,
+    "cardColor": "#FFF8E1"
+  },
+  {
+    "id": "artist-3",
+    "name": "Aria Chen",
+    "genre": "Indie Pop",
+    "bio": "Singer-songwriter Aria Chen crafts deeply personal indie pop songs with lush arrangements. Her debut album topped indie charts for 12 consecutive weeks.",
+    "avatar": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&h=200&fit=crop",
+    "coverImage": "https://images.unsplash.com/photo-1459749411175-04bf5292ceea?w=800&h=400&fit=crop",
+    "followers": 312000,
+    "monthlyListeners": 2100000,
+    "cardColor": "#E8F5E9"
+  },
+  {
+    "id": "artist-4",
+    "name": "DJ Prism",
+    "genre": "House",
+    "bio": "DJ Prism brings infectious energy to dancefloors worldwide. His unique blend of deep house and tech creates an irresistible groove that keeps crowds moving all night.",
+    "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&h=200&fit=crop",
+    "coverImage": "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=800&h=400&fit=crop",
+    "followers": 156000,
+    "monthlyListeners": 780000,
+    "cardColor": "#E3F2FD"
+  },
+  {
+    "id": "artist-5",
+    "name": "Sage Hollow",
+    "genre": "Lo-fi",
+    "bio": "Creating dreamy lo-fi beats perfect for late night studying and relaxation. Sage Hollow has become a staple in the chill beats community.",
+    "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=200&h=200&fit=crop",
+    "coverImage": "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&h=400&fit=crop",
+    "followers": 98000,
+    "monthlyListeners": 560000,
+    "cardColor": "#F3E5F5"
+  },
+  {
+    "id": "artist-6",
+    "name": "The Velvet Keys",
+    "genre": "Soul",
+    "bio": "The Velvet Keys bring old-school soul into the modern era with rich harmonies and timeless melodies. Their live shows are legendary for their raw emotional power.",
+    "avatar": "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=200&h=200&fit=crop",
+    "coverImage": "https://images.unsplash.com/photo-1501612780327-45045538702b?w=800&h=400&fit=crop",
+    "followers": 210000,
+    "monthlyListeners": 1200000,
+    "cardColor": "#FCE4EC"
+  }
+]

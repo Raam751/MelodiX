@@ -1,0 +1,134 @@
+[
+  {
+    "id": "track-1",
+    "title": "Midnight Echoes",
+    "artistId": "artist-1",
+    "artistName": "Luna Wave",
+    "album": "Neon Dreams",
+    "duration": 234,
+    "artwork": "https://images.unsplash.com/photo-1614149162883-504ce4d13909?w=300&h=300&fit=crop",
+    "plays": 1500000,
+    "genre": "Electronic"
+  },
+  {
+    "id": "track-2",
+    "title": "Golden Hour",
+    "artistId": "artist-3",
+    "artistName": "Aria Chen",
+    "album": "Sunlit Pages",
+    "duration": 198,
+    "artwork": "https://images.unsplash.com/photo-1500462918059-b1a0cb512f1d?w=300&h=300&fit=crop",
+    "plays": 2300000,
+    "genre": "Indie Pop"
+  },
+  {
+    "id": "track-3",
+    "title": "Smooth Operator",
+    "artistId": "artist-2",
+    "artistName": "Marcus Reed",
+    "album": "Blue Velvet Sessions",
+    "duration": 312,
+    "artwork": "https://images.unsplash.com/photo-1446057032654-9d8885db76c6?w=300&h=300&fit=crop",
+    "plays": 890000,
+    "genre": "Jazz Fusion"
+  },
+  {
+    "id": "track-4",
+    "title": "Electric Pulse",
+    "artistId": "artist-4",
+    "artistName": "DJ Prism",
+    "album": "Club Essentials",
+    "duration": 276,
+    "artwork": "https://images.unsplash.com/photo-1557672172-298e090bd0f1?w=300&h=300&fit=crop",
+    "plays": 670000,
+    "genre": "House"
+  },
+  {
+    "id": "track-5",
+    "title": "Rainy Afternoon",
+    "artistId": "artist-5",
+    "artistName": "Sage Hollow",
+    "album": "Quiet Moments",
+    "duration": 185,
+    "artwork": "https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=300&h=300&fit=crop",
+    "plays": 430000,
+    "genre": "Lo-fi"
+  },
+  {
+    "id": "track-6",
+    "title": "Velvet Sunrise",
+    "artistId": "artist-6",
+    "artistName": "The Velvet Keys",
+    "album": "Soul Sessions",
+    "duration": 253,
+    "artwork": "https://images.unsplash.com/photo-1504898770365-14faca6a7320?w=300&h=300&fit=crop",
+    "plays": 1100000,
+    "genre": "Soul"
+  },
+  {
+    "id": "track-7",
+    "title": "Crystal Waves",
+    "artistId": "artist-1",
+    "artistName": "Luna Wave",
+    "album": "Neon Dreams",
+    "duration": 267,
+    "artwork": "https://images.unsplash.com/photo-1557682250-33bd709cbe85?w=300&h=300&fit=crop",
+    "plays": 920000,
+    "genre": "Electronic"
+  },
+  {
+    "id": "track-8",
+    "title": "Paper Hearts",
+    "artistId": "artist-3",
+    "artistName": "Aria Chen",
+    "album": "Sunlit Pages",
+    "duration": 210,
+    "artwork": "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=300&h=300&fit=crop",
+    "plays": 1750000,
+    "genre": "Indie Pop"
+  },
+  {
+    "id": "track-9",
+    "title": "Night Jazz",
+    "artistId": "artist-2",
+    "artistName": "Marcus Reed",
+    "album": "Blue Velvet Sessions",
+    "duration": 345,
+    "artwork": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=300&h=300&fit=crop",
+    "plays": 560000,
+    "genre": "Jazz Fusion"
+  },
+  {
+    "id": "track-10",
+    "title": "Neon Lights",
+    "artistId": "artist-4",
+    "artistName": "DJ Prism",
+    "album": "Club Essentials",
+    "duration": 298,
+    "artwork": "https://images.unsplash.com/photo-1550684376-efcbd6e3f031?w=300&h=300&fit=crop",
+    "plays": 420000,
+    "genre": "House"
+  },
+  {
+    "id": "track-11",
+    "title": "Dreamy Café",
+    "artistId": "artist-5",
+    "artistName": "Sage Hollow",
+    "album": "Quiet Moments",
+    "duration": 195,
+    "artwork": "https://images.unsplash.com/photo-1459749411175-04bf5292ceea?w=300&h=300&fit=crop",
+    "plays": 380000,
+    "genre": "Lo-fi"
+  },
+  {
+    "id": "track-12",
+    "title": "Soul Fire",
+    "artistId": "artist-6",
+    "artistName": "The Velvet Keys",
+    "album": "Soul Sessions",
+    "duration": 278,
+    "artwork": "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=300&h=300&fit=crop",
+    "plays": 890000,
+    "genre": "Soul"
+  }
+]
