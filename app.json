@@ -16,7 +16,9 @@
       "supportsTablet": false,
       "bundleIdentifier": "com.melodix.app",
       "infoPlist": {
-        "UIBackgroundModes": ["audio"]
+        "UIBackgroundModes": [
+          "audio"
+        ]
       }
     },
     "android": {
@@ -25,7 +27,9 @@
         "backgroundColor": "#87CEEB"
       },
       "package": "com.melodix.app",
-      "permissions": ["android.permission.INTERNET"]
+      "permissions": [
+        "android.permission.INTERNET"
+      ]
     },
     "web": {
       "favicon": "./assets/favicon.png"
@@ -35,7 +39,7 @@
     ],
     "extra": {
       "eas": {
-        "projectId": "melodix-app"
+        "projectId": "fafebd0b-a625-4c81-b9be-d46e6179ca47"
       }
     }
   }
